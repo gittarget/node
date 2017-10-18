@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../templates/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../templates/header %>
+</header>
+
+<main>
+    <div class="jumbotron">
+
+    <div class="panel panel-primary">
+    	<!-- Default panel contents -->
+    	<div class="panel-heading"><%= titulo %></div>
+
+        <!-- Table -->
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Data Nascimento</th>
+                    <th colspan="3" >Ações</th>
+                </tr>
+
+            </thead>
+            <tbody>
+            <% clientes.forEach(function(clientes) { %>
+                <tr>
+                    <td><%= clientes.nome %></td>
+                    <td><%= clientes.sexo %></td>
+                    <td><%= clientes.dataNascimento %></td>
+                    <td><button class="btn btn-info" onclick="show()"><i class="fa fa-edit"></i></button></td>
+                    <td><button class="btn btn-danger"><i class="fa fa-eraser"></i></button></td>
+                    <td><button class="btn btn-info"><i class="fa fa-group"></i></button></td>
+
+
+                </tr>
+            <% }); %>
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+</main>
+
+<footer>
+    <% include ../templates/footer %>
+</footer>
+<script>
+function show(){
+    $( ".btn" ).load( "/edit" );
+}
+</script>
+</body>
+</html>

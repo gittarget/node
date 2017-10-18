@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Express</title>
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form action="cadastro" method="POST" class="form-vertical" role="form">
+                <div class="form-group">
+                    <legend>Cadastro</legend>
+                </div>
+
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name" class="form-control" value="" title="" required="required" >
+
+                <label for="email">E-mail: </label>
+                <input type="text" name="email" id="email" class="form-control" value="" title="" required="required" >
+
+                <div class="form-group">
+                    <button type="reset" class="btn btn-danger">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
+</div>
+</div>
+</body>

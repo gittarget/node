@@ -1,0 +1,23 @@
+{
+  "name": "mvc",
+  "version": "1.0.0",
+  "description": "Exemplo MVC no Node.js",
+  "main": "router.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassiowt/modulo_mvc.git"
+  },
+  "author": "Cassio Trindade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassiowt/modulo_mvc/issues"
+  },
+  "homepage": "https://github.com/cassiowt/modulo_mvc#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
