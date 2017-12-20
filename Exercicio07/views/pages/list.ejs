@@ -21,6 +21,7 @@
 
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Nome</th>
                     <th>Sexo</th>
                     <th>Data Nascimento</th>
@@ -31,10 +32,11 @@
             <tbody>
             <% clientes.forEach(function(clientes) { %>
                 <tr>
+                    <td><%= clientes.id %></td>
                     <td><%= clientes.nome %></td>
                     <td><%= clientes.sexo %></td>
                     <td><%= clientes.dataNascimento %></td>
-                    <td><button class="btn btn-info" onclick="show()"><i class="fa fa-edit"></i></button></td>
+                    <td><a href='/edit/<%=clientes.id %>'  class="btn btn-info"><i class="fa fa-edit"></i></button></td>
                     <td><button class="btn btn-danger"><i class="fa fa-eraser"></i></button></td>
                     <td><button class="btn btn-info"><i class="fa fa-group"></i></button></td>
 

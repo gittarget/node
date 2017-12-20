@@ -26,8 +26,27 @@ app.get('/list', function(req, res) {
     });
 });
 
-app.get('/edit', function(req, res) {
-    res.render('pages/edit');
+app.post('/list', function(req, res) {
+
+    var titulo = "Listagem Cliente VIP";
+
+    res.render('pages/list', {
+        clientes: clientes.listaClientes.clientes,
+        titulo: titulo
+    });
+});
+
+app.get('/edit/:id', function(req, res) {
+   
+    var cliente = clientes[1]
+
+    console.log(clientes);
+    console.log(req.params.id);
+    console.log(cliente);
+
+    res.render('pages/edit', { 
+        cliente : cliente
+    });
 });
 
 app.get('/about', function(req, res) {
