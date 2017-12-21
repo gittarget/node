@@ -6,7 +6,7 @@
     "start": "nodemon server.js"
   },
   "dependencies": {
-    "ejs": "^1.0.0",
+    "ejs": "^2.5.5",
     "express": "^4.6.1"
   },
   "author": "Cassio Trindade"
